@@ -15,5 +15,5 @@ allow recovery media_rw_data_file:dir r_dir_perms;
 r_dir_file(recovery, unencrypted_data_file)
 
 # Enable adb root
-set_prop(recovery, shell_prop)
+set_prop(recovery, adbd_private_prop)
 ')
