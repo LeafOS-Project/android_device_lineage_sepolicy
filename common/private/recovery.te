@@ -18,4 +18,8 @@ r_dir_file(recovery, unencrypted_data_file)
 
 # Enable adb root
 set_prop(recovery, adbd_private_prop)
+
+# Loop devices
+allow recovery sysfs_loop:dir r_dir_perms;
+allow recovery sysfs_loop:file rw_file_perms;
 ')
